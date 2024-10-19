@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/styles.css'; // Pastikan jalur ini sesuai
 
 const Cart = ({ cartItems }) => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);

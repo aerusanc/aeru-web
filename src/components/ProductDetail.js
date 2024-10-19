@@ -1,44 +1,46 @@
 import React from 'react';
+import { FaStar, FaShoppingCart } from 'react-icons/fa';
+import '../assets/styles.css'; // Pastikan jalur ini sesuai
 
 const ProductDetail = () => {
     return (
-        <div className="p-8 flex justify-center">
-            <div className="flex space-x-8 w-full max-w-6xl"> {/* Kontainer utama */}
+        <div className="p-4 md:p-8 flex justify-center">
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 w-full max-w-6xl"> {/* Kontainer utama */}
                 {/* Card untuk Gambar Produk */}
-                <div className="flex-none w-1/2 border rounded-lg p-4">
+                <div className="flex-none w-full md:w-1/2 border rounded-lg p-4">
                     <img
                         src={`${process.env.PUBLIC_URL}/assets/product.png`} // Ganti URL gambar jika perlu
                         alt="Home Jersey 2024/2025"
-                        className="w-[670px] h-[580px] object-cover" // Mengatur dimensi gambar
+                        className="w-full h-auto object-cover" // Mengatur dimensi gambar
                     />
                 </div>
 
-                
-                
                 {/* Card untuk Detail Produk */}
-                <div className="flex-none w-1/2 flex flex-col space-y-4">
+                <div className="flex-none w-full md:w-1/2 flex flex-col space-y-4">
                     <div className="bg-gray-200 p-2 rounded-full inline-block">Best Seller</div>
                     <div className="bg-gray-200 p-4 rounded-lg space-y-4">
                         <div className="text-2xl font-bold">Home Jersey 2024/2025</div>
                         <div className="flex items-center space-x-2">
                             <div className="flex space-x-1">
-                                <i className="far fa-star"></i>
-                                <i className="far fa-star"></i>
-                                <i className="far fa-star"></i>
-                                <i className="far fa-star"></i>
-                                <i className="far fa-star"></i>
+                                {/* Ganti ikon bintang dengan react-icons */}
+                                <FaStar className="text-yellow-500" />
+                                <FaStar className="text-yellow-500" />
+                                <FaStar className="text-yellow-500" />
+                                <FaStar className="text-gray-500" />
+                                <FaStar className="text-gray-500" />
                             </div>
                             <div>0 Reviews</div>
                         </div>
                         <div>Select Size</div>
-                        <div className="flex space-x-2">
+                        <div className="flex flex-wrap space-x-2">
                             {['XS', 'S', 'M', 'L', 'XL', 'XXL'].map(size => (
                                 <button key={size} className="border rounded-full px-4 py-1">{size}</button>
                             ))}
                         </div>
                         <button className="bg-gray-300 px-4 py-2 rounded-full w-full">SHOP NOW</button>
                         <button className="bg-gray-300 p-2 rounded-full w-full flex justify-center items-center">
-                            <i className="fas fa-shopping-cart"></i>
+                        <FaShoppingCart className='text-lg mr-2' /> {/* Menambahkan kelas CSS */}
+                        Add to Cart
                         </button>
                     </div>
                     <div className="bg-gray-200 p-4 rounded-lg">
