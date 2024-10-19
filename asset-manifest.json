@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aeru-web/static/css/main.d54501dc.css",
+    "main.js": "/aeru-web/static/js/main.7f77cab0.js",
+    "static/js/453.de07d413.chunk.js": "/aeru-web/static/js/453.de07d413.chunk.js",
+    "index.html": "/aeru-web/index.html",
+    "main.d54501dc.css.map": "/aeru-web/static/css/main.d54501dc.css.map",
+    "main.7f77cab0.js.map": "/aeru-web/static/js/main.7f77cab0.js.map",
+    "453.de07d413.chunk.js.map": "/aeru-web/static/js/453.de07d413.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d54501dc.css",
+    "static/js/main.7f77cab0.js"
+  ]
+}
